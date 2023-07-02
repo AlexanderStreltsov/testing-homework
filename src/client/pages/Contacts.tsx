@@ -6,7 +6,7 @@ const bem = cn('Contacts');
 
 export const Contacts: React.FC = () => {
     return (
-        <div className={bem()}>
+        <div data-testid="check-page" className={bem()}>
             <Helmet title="Contacts" />
             <div className="row">
                 <div className="col">

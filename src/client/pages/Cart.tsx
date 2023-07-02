@@ -76,7 +76,7 @@ export const Cart: React.FC = () => {
     const actions = cartIsEmpty ? null : (
         <div className="row mb-4">
             <div className="col-6">
-                <button className={bem('Clear', ['btn', 'btn-outline-secondary'])} onClick={onClear}>Clear shopping cart</button>
+                <button data-testid="clear-cart" className={bem('Clear', ['btn', 'btn-outline-secondary'])} onClick={onClear}>Clear shopping cart</button>
             </div>
         </div>
     );
@@ -106,7 +106,7 @@ export const Cart: React.FC = () => {
     ) : null;
 
     return (
-        <div className={bem()}>
+        <div data-testid="check-page" className={bem()}>
             <Helmet title="Shopping cart" />
             <div className="row mb-4">
                 <div className="col">
